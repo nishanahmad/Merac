@@ -24,9 +24,9 @@
 
     if (@mail($to, $email, $message, $headers))
     {
-        echo 'The message has been sent.';
+        header( "Location: index.php" );
     }else{
-        echo 'failed';
+        header( "Location: index.php" );
     }
 
 ?>
